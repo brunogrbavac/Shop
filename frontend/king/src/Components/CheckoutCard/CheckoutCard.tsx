@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cover from '../../images/cover.png';
+import productImg from '../../images/product.jpg';
 import trash from '../../images/trash.png';
 import { CartItem } from "../../types";
 import { useAppSelector, useAppDispatch } from "../../redux/hooks";
@@ -19,7 +19,7 @@ const CheckoutCard = ({item}:{item:CartItem}) => {
     return(
         <div className="cart-card">
             <div className="cc-cover">
-                <img src={item.product.imageUrl} alt="Cover." />
+                <img src={productImg} alt="Cover." />
             </div>
             <div className="cc-info-container">
                 <div id="cc-title-container">

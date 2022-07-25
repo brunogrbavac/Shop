@@ -12,7 +12,7 @@ const ProductCardInfo = ({product}:{product: Product}) => {
 
     return(
         <div className="card-info">
-            <h1 id="card-title">{(product.title.length)>20?product.title.substring(0,20)+' ...':product.title}</h1>
+            <h1 id="card-title">{(product.name.length)>20?product.name.substring(0,20)+' ...':product.name}</h1>
             <h2 id="card-price"> {product.price}<span id="card-currency">HRK</span></h2>
             <button id="card-buy-button" onClick={()=>dispatch(add({product: product, quantity: 1}))}>Add to Cart</button>
             <button id="card-buy-button-no-text" onClick={()=>dispatch(add({product: product, quantity: 1}))}> 

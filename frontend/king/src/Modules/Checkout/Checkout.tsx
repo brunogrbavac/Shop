@@ -86,7 +86,7 @@ const Checkout = () => {
                     <span className="checkout-label" id="lf8">I agree</span>
                 </div>
 
-                <button type="submit" id="checkout-submit" disabled={nameError||lastnameError||emailError||addressError||zipError||!checked}>
+                <button type="submit" id="checkout-submit" disabled={nameError||lastnameError||emailError||addressError||cardError||!checked}>
                     Checkout
                 </button>
 
